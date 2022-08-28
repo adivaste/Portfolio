@@ -11,30 +11,48 @@
       <!-- Fonts -->
       <style>
             @font-face {
-              font-family: 'Biotif-Regular';
-              src: url("{{ url_for('static', filename='/fonts/biotif-regular.woff2') }}");
+                  font-family: 'Biotif-Regular';
+                  src: url("{{ url_for('static', filename='/fonts/biotif-regular.woff2') }}");
+            }
+
+            @font-face {
+                  font-family: 'sofiapro-light';
+                  src: url("{{ url_for('static', filename='/fonts/sofiapro-light.ttf') }}");
             }
             @font-face {
-              font-family: 'sofiapro-light';
-              src: url("{{ url_for('static', filename='/fonts/sofiapro-light.ttf') }}");
+                  font-family: 'NeuzeitGrotesk-Bold';
+                  src: url("{{ url_for('static', filename='/fonts/NeuzeitGrotesk-Bold.woff2') }}");
             }
-      </style>        
+      </style>
 </head>
 
 <body>
       <header>
-            <span class="logo scale-in-center">ad<span class="letter_i ">!</span>vaste</span>
+            <span class="logo scale-in-center">adi<span class="letter_i ">.</span>v</span>
             <navbar class="navbar nav scale-in-center">
                   <ul>
                         <li onclick="makeUnderline(this.id, this.class)" class="nav_li " id="nav_li_1">Home</li>
-                        <li onclick="makeUnderline(this.id, this.class)" class="nav_li" id="nav_li_2">Project</li>
+                        <li onclick="makeUnderline(this.id, this.class)" class="nav_li" id="nav_li_2">Projects</li>
                         <li onclick="makeUnderline(this.id, this.class)" class="nav_li" id="nav_li_3">About</li>
-                        <li onclick="makeUnderline(this.id, this.class)" class="nav_li " id="nav_li_4">Contact</li>
+                        <li  onclick="makeUnderline(this.id, this.class)" class="nav_li " id="nav_li_4">Contact</a></li>
                   </ul>
             </navbar>
             <div class="extra-logo scale-in-center"><i class="fa fa-code"></i></div>
       </header>
-<script type="text/javascript" src="{{ url_for('static',filename='main.js') }}"></script>
+      <content class="content">
+            <div class="personal-profile">
+                  <div class="pp-col profile-pic">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2tkGQIDoBT4FSjjWDBD0QD8GOXRlZ4TvA-sWbwmSPCI3JcSyhEQon2exRY6JjpP57MwuXezDb79ItVrRsZ9UM-853Bs7pyUAzps4lKiXnyZG0UQ3WYEjInEg-A1dOi3zRJSdKNHLdDGSXc5hoAcsNpKKf0AcMpPLTVSB0U3f4iHLdGCxV77QZ0si0/s1600/Fotor_166157148238229.jpg" width="280px" height="280px">
+                  </div>
+                  <div class="pp-col short-intro">
+                        <div class="name">Aditya Vaste</div>
+                        <div class="education-title">Junior Full Stack Developer Studying at SKNCOE</div>
+                        <div class="education-desc">Aditya here, 20 y.o, experienced programmer with several successful projects under my belt. I have good hand in JAVA, PYTHON, HTML, CSS, JS and MYSQL. I'd say my portfolio introduces me better than my words do.</div>
+
+                  </div>
+            </div>
+      </content>
+      <script type="text/javascript" src="{{ url_for('static',filename='main.js') }}"></script>
 </body>
 
 </html>
