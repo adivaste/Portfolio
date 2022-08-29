@@ -125,6 +125,15 @@ header {
             }
       }
 }
+.logo-link{
+      text-decoration: none;
+      color: inherit;
+        
+      :hover {
+            text-decoration:none; 
+            cursor:pointer;  
+      }
+}
 .logo{
       font-family: 'sofiapro-light';
       font-size: 34px;
@@ -156,29 +165,36 @@ header {
       width: 100%;
       height:70%;
       display:flex;
-      flex-direction: row;
+      flex-direction:row;
+      flex-wrap:nowrap;
+      padding: 10px 20px;
       // border: 1px solid green;
 }
 .profile-pic{
       display: inline-block;
+      padding: 20px;
       width: 30%;
       display: flex;
       align-items: center;
-      justify-content: flex-end;
+      justify-content: center;
+      // max-width: 360px;
+      min-width: 200px;
       // border: 1px solid red;
 }
 img{
       border-radius:50%;
-      max-width: 100%;
-      max-height: 100%;
-      right:20px;
-      position: relative;
+      width: 100%;
+      // min-width: 100%;
+      max-width: 260px;
+      max-height: auto;
+      height: auto;
 }
 .short-intro{
       width: 70%;
       display:flex;
       flex-direction: column;
       justify-content: center;
+      // border: 1px solid rgb(73, 119, 236);
 }
 
 .name{
@@ -232,4 +248,6 @@ img{
         opacity: 1;
       }
     }
-    
+
+
+// justify-content: center;

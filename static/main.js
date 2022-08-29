@@ -1,32 +1,42 @@
-function makeUnderline(li_id) {
+function makeUnderline(li_id, li_classes) {
+
+      // Appending and removing to Performing Animation 
       var nav_li_class_name = 'nav_li';
       var li_element = document.getElementById(li_id);
       var li_elements = document.getElementsByClassName(nav_li_class_name);
-
-      // console.log(li_elements)
 
       for (var i = 0; i < li_elements.length; i++) {
             li_elements[i].classList.remove("active");
       }
       li_element.classList.add("active");
 
-      var element = document.querySelector(".content")
-      console.log(element)
+      // Dynamically adding the content to webpage
+      var pages = ['home', 'about', 'contact', 'projects']
+      var classListArray = Array.from(li_classes)
 
-      loadHTML(element)
-      
+      for (var i = 0; i < pages.length; i++) {
+            className = pages[i]
+            if (classListArray.indexOf(className) != -1) {
+                  pageName = className
+                  addContentDynamically(pageName)
+                  break;
+            }
+      }
 }
 
-function processAjaxData(response, urlPath){
-      document.getElementById("content").innerHTML = response.html;
-      document.title = response.pageTitle;
-      window.history.pushState({"html":response.html,"pageTitle":response.pageTitle},"", urlPath);
-  }
+function addContentDynamically(pageName) {
+      fetch(`./${pageName}`)
+            .then(response => response.text())
+            .then(text => {
+                  const parser = new DOMParser();
+                  const htmlDocument = parser.parseFromString(text, "text/html");
+                  const content = htmlDocument.documentElement.querySelector(".content").innerHTML;
 
-  function loadHTML(element){
-      fetch('./project.html')
-      .then(response=> response.text())
-      .then(text=> element.innerHTML = text);
+                  var targetElement = document.querySelector(".content");
+                  targetElement.innerHTML = content;
 
-      
-    }
+                  document.title = htmlDocument.title
+                  window.history.pushState('', '', `${pageName}`);
+            }
+      )
+}

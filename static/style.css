@@ -120,6 +120,15 @@ header {
   width: 40px;
 }
 
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+.logo-link :hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .logo {
   font-family: "sofiapro-light";
   font-size: 34px;
@@ -154,22 +163,26 @@ header {
   height: 70%;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 10px 20px;
 }
 
 .profile-pic {
   display: inline-block;
+  padding: 20px;
   width: 30%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  min-width: 200px;
 }
 
 img {
   border-radius: 50%;
-  max-width: 100%;
-  max-height: 100%;
-  right: 20px;
-  position: relative;
+  width: 100%;
+  max-width: 260px;
+  max-height: auto;
+  height: auto;
 }
 
 .short-intro {
