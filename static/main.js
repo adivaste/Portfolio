@@ -11,7 +11,7 @@ function makeUnderline(li_id, li_classes) {
       li_element.classList.add("active");
 
       // Dynamically adding the content to webpage
-      var pages = ['home', 'about', 'contact', 'projects']
+      var pages = ['home', 'about', 'contact', 'projects','skills','achievements']
       var classListArray = Array.from(li_classes)
 
       for (var i = 0; i < pages.length; i++) {
@@ -40,3 +40,10 @@ function addContentDynamically(pageName) {
             }
       )
 }
+window.onpopstate = function(e){
+      console.log(e.state)
+      if(true){
+          document.querySelector(".content").innerHTML = "Wow";
+          document.title = e.state.pageTitle;
+      }
+  };

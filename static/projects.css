@@ -1,0 +1,60 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.projectsWrapper {
+  color: rgb(255, 255, 255);
+  font-family: "Biotif-Regular";
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  margin: 30px 10px;
+}
+
+.project {
+  display: inline-block;
+  height: 280px;
+  width: 35%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 0px 10px -5px rgba(255, 255, 255, 0.4);
+}
+
+.project-thumbnail {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.thumbnail-img {
+  width: 100%;
+  height: 100%;
+}
+
+.desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(9, 9, 9, 0.7);
+  width: 100%;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+
+.project-title {
+  font-size: 22px;
+  padding: 15px 15px 5px 15px;
+  display: block;
+}
+
+.project-description {
+  font-size: 16px;
+  padding: 10px 15px 15px 15px;
+  color: rgb(206, 206, 206);
+  display: block;
+}/*# sourceMappingURL=projects.css.map */

@@ -21,5 +21,14 @@ def projects():
 @app.route("/contact")
 def contact():
     return render_template('contact.html')
+
+@app.route("/skills")
+def skills():
+    return render_template('skills.html')
+
+@app.route("/achievements")
+def achievements():
+    return render_template('achievements.html')
+
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
