@@ -1,7 +1,32 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>contact</h1>
-<p class="important">
-      Welcome to my awesome contact.
-</p>
+<div class="contact flip-in-hor-bottom">
+      <!-- <div class="social"><i class="icon fa fa-github"></i>Github</span></div>
+      <div class="social"><i class="icon fa fa-linkedin"></i>LinkedIn</span></div>
+      <div class="social"><i class="icon fa fa-twitter"></i>Twitter</span></div>
+      <div class="social"><i class="icon fa fa-envelope"></i>Gmail</span></div>
+      <div class="social"><i class="icon fa fa-instagram"></i>Instagram</div> -->
+
+      <div onclick="window.location.href = 'https://github.com/adivaste'" class="social">
+            <i class="icon fa fa-github"></i> 
+            <span class="caption">Github</span>
+      </div>
+      <div onclick="window.location.href = 'https://linkedin.com/in/aditya-vaste-5924a7209/'" class="social">
+            <i class="icon fa fa-linkedin"></i> 
+            <span class="caption">LinkedIn</span>
+      </div>
+      <div onclick="window.location.href = 'https://twitter.com/vasteaditya'" class="social">
+            <i class="icon fa fa-twitter"></i> 
+            <span class="caption">Twitter</span>
+      </div>
+      <a class="mail" href="mailto:adivaste@outlook.com"><div class="social">
+            <i class="icon fa fa-envelope"></i> 
+            <span class="caption">Gmail</span>
+      </div>
+      </a>
+      <div onclick="window.location.href = 'https://instagram.com/adi_vaste45'" class="social">
+            <i class="icon fa fa-instagram"></i> 
+            <span class="caption">Instagram</span>
+      </div>
+</div>
 {% endblock %}

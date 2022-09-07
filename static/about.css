@@ -74,6 +74,7 @@
       height: 100%;
       display: flex;
       flex-direction: column;
+
 }
 .about-profile-pic{
       display: flex;
@@ -85,17 +86,24 @@
       font-size:34px;
       font-family: 'Biotif-Regular';
       padding:10px 0px 5px 0px;
+      font-weight: 600;
+      letter-spacing:1.1px;
 
 }
 .bio-desc, .skills-desc{
       color:var(--colors-secondary);
       font-family: 16px;
+      /* letter-spacing: 0.5px; */
+      text-align: justify;
 }
 .bio-wrapper, .skills-wrapper{
       width: 100%;
       padding: 10px 200px;
       font-family: "Biotif-Regular";
       min-width: 300px;
+}
+.skills-wrapper{
+      padding-bottom: 40px;
 }
 
 p {
@@ -108,7 +116,6 @@ table {
       width: 60%;
       margin: 0 auto;
       font-family: 'JetBrains Mono', monospace;
-
 }
 
 ul {
