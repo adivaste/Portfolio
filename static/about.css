@@ -1,0 +1,32 @@
+*{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+}
+body{
+      font-family:cursive;
+}
+
+.maindiv{
+      background-image: url("https://source.unsplash.com/random/?spirituality");
+      width: 100vw;
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+}
+.child{
+      font-family: cursive;
+      color: red;
+      font-size: 30px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border: 1px solid blueviolet;
+      width: 300px;
+      height: 300px;
+      border-radius: 20px;
+      background-color: rgba(163, 163, 163, 0.37);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+}
