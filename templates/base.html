@@ -10,6 +10,11 @@
       <link rel="stylesheet" href="{{ url_for('static', filename='projects.css') }}">
       <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
       <!-- Fonts -->
       <style>
             @font-face {
@@ -30,18 +35,18 @@
 
 <body>
       <header>
-            <a onclick="addContentDynamically('/')" class="logo-link scale-in-center"><span class="logo">adi<span class="letter_i ">.</span>v</span></a>
-            <navbar class="navbar nav ">
+            <a onclick="addContentDynamically('/')" class="logo-link fade-in-fwd"><span class="logo">adi<span class="letter_i ">.</span>v</span></a>
+            <navbar class="navbar nav fade-in-fwd">
                   <ul>
                         <li onclick="makeUnderline(this.id, this.classList)" class="nav_li home" id="nav_li_1">Home</li>
                         <li onclick="makeUnderline(this.id, this.classList)" class="nav_li projects" id="nav_li_2">Projects</li>
                         <li onclick="makeUnderline(this.id, this.classList)" class="nav_li about" id="nav_li_3">About</li>
-                        <li  onclick="makeUnderline(this.id, this.classList)" class="nav_li skills" id="nav_li_4">Skills</a></li>
+                        <!-- <li  onclick="makeUnderline(this.id, this.classList)" class="nav_li skills" id="nav_li_4">Skills</a></li> -->
                         <li  onclick="makeUnderline(this.id, this.classList)" class="nav_li contact" id="nav_li_5">Contact</a></li>
-                        <li  onclick="makeUnderline(this.id, this.classList)" class="nav_li achievements" id="nav_li_6">Achievements</a></li>
+                        <!-- <li  onclick="makeUnderline(this.id, this.classList)" class="nav_li achievements" id="nav_li_6">Achievements</a></li> -->
                   </ul>
             </navbar>
-            <div class="extra-logo scale-in-center"><i class="fa fa-code"></i></div>
+            <div class="extra-logo fade-in-fwd"><i class="fa fa-code"></i></div>
       </header>
       <div class="headerclone"></div>
       <content class=" content">
