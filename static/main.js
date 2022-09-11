@@ -47,3 +47,15 @@ window.onpopstate = function(e){
           document.title = e.state.pageTitle;
       }
   };
+
+const navbar = document.querySelector(".navbar");
+const menu = document.querySelector(".menu");
+// const menu = document.querySelector(".menu");
+
+function toogleMobileNavbar(){
+      navbar.classList.toggle("navbar-mobile");  
+      menu.classList.toggle("active-mobile");
+}
+
+menu.addEventListener("click",() => toogleMobileNavbar());
+// menu.addEventListener("click",() => toogleMobileNavbar());

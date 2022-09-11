@@ -31,4 +31,4 @@ def achievements():
     return render_template('achievements.html')
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8000)
+    app.run()
