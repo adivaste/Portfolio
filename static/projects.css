@@ -105,3 +105,19 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 991px) {
+  .projectsWrapper{
+    flex-direction: column;
+  }
+  .project{
+    width: 80%;
+  margin: 15px auto;
+  }
+  .project-title{
+    font-size:22px;
+  }
+  .project-description{
+    font-size:15px;
+  }
+}

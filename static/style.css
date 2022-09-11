@@ -69,7 +69,7 @@
 body {
   background-color: var(--colors-background);
   color: var(--colors-primary);
-  /* overflow: hidden; */
+  overflow-x: hidden;
   width: 100vw;
   height: 100vh;
 }
@@ -351,10 +351,10 @@ a{
 @media (max-width: 991px) {
 
   html{
-    overflow:hidden;
+    overflow-x:hidden;
   }
   body{
-    overflow:hidden;
+    overflow-x:hidden;
   }
   .mobile-navbar{
     display: block;
@@ -412,5 +412,32 @@ a{
   .headerclone{
     display: none !important;
   }
+
+  /* --- */
+  .personal-profile{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .name{
+    font-size:30px;
+    padding:10px;
+    margin: 0px;
+    text-align: center;
+  }
+
+  .short-intro{
+    width:95%;
+    text-align: center;
+  }
+
+  .education-desc{
+    text-align: justify;
+    width:100%;
+    line-height: inherit;
+    word-spacing:1.1px;
+    padding: 10px;
+  }
+
   
 }

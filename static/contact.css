@@ -68,3 +68,13 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 991px){
+  .contact{
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .social{
+    padding:15px;
+  }
+}

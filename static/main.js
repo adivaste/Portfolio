@@ -50,6 +50,7 @@ window.onpopstate = function(e){
 
 const navbar = document.querySelector(".navbar");
 const menu = document.querySelector(".menu");
+const navList  = document.querySelectorAll(".nav_li")
 // const menu = document.querySelector(".menu");
 
 function toogleMobileNavbar(){
@@ -58,4 +59,6 @@ function toogleMobileNavbar(){
 }
 
 menu.addEventListener("click",() => toogleMobileNavbar());
-// menu.addEventListener("click",() => toogleMobileNavbar());
+for (let i = 0; i < navList.length; i++) {
+      navList[i].addEventListener("click",() => toogleMobileNavbar());
+}

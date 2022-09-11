@@ -93,7 +93,6 @@
 .bio-desc, .skills-desc{
       color:var(--colors-secondary);
       font-family: 16px;
-      /* letter-spacing: 0.5px; */
       text-align: justify;
 }
 .bio-wrapper, .skills-wrapper{
@@ -136,4 +135,26 @@ ul.dashed>li:before {
 }
 .col1, .col2{
       text-align: left;
+}
+
+@media (max-width: 991px) {
+      .bio, .skills{
+            width:100%;
+            font-size: 28px;
+      }
+
+      .bio-desc, .skills-desc{
+            color:var(--colors-secondary);
+            font-family: 16px;
+            /* letter-spacing: 0.5px; */
+            text-align: left; 
+            width: 100%;
+      }
+
+      .bio-wrapper, .skills-wrapper{
+            width: 100%;
+            padding: 10px 40px;
+            font-family: "Biotif-Regular";
+            min-width: 300px;
+      }
 }
