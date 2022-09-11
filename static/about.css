@@ -157,4 +157,7 @@ ul.dashed>li:before {
             font-family: "Biotif-Regular";
             min-width: 300px;
       }
+      table{
+            width: 100%;
+      }
 }
